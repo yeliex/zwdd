@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "专有钉钉node-sdk",
   "main": "index.js",
+  "types": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
