@@ -2,11 +2,21 @@
   "name": "zwdd",
   "version": "0.1.1",
   "description": "专有钉钉node-sdk",
-  "main": "index.js",
+  "main": "dist/index.js",
   "types": "src/index.ts",
   "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "dist",
+    "src",
+    "package.json",
+    "README.md"
+  ],
   "keywords": [
     "dingtalk",
     "政务钉钉",
